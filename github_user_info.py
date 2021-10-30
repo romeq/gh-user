@@ -1,5 +1,5 @@
 #!/bin/python3
-# Request specified account's profile data from GitHub API and display them smoothly
+# Request specified account's profile data from GitHub API and show them to user
 #
 
 import html
