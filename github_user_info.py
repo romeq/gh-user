@@ -44,11 +44,11 @@ class DataHandler:
         self._print_field("\nUsername", self.basic['login'])
         self._print_field("Full name", self.basic['name'])
         self._print_field("Biography", self.basic['bio'])
-        self._print_field("twitter", self.basic['twitter_username'])
-        self._print_field("company", self.basic['company'])
-        self._print_field("Public repos", self.basic['public_repos'])
-        self._print_field("Public gists", self.basic['public_gists'])
-        self._print_field("User created",
+        self._print_field("Twitter", self.basic['twitter_username'])
+        self._print_field("Company", self.basic['company'])
+        self._print_field("Projects", self.basic['public_repos'])
+        self._print_field("pub gists", self.basic['public_gists'])
+        self._print_field("Created",
                           self._parse_time(self.basic['created_at']))
 
     def handle_repos(self):
@@ -60,6 +60,7 @@ class DataHandler:
                 self._print_field("\tRepository name", repo_data['name'])
                 self._print_field("\tShort description", repo_data['description'])
                 self._print_field("\tProject Language", repo_data['language'])
+                self._print_field("\tRepository Link", repo_data['html_url'])
                 print("")
 
 
